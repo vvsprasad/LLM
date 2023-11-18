@@ -1,0 +1,13 @@
+Automated control-flow migration
+I also want to mention that one of the Angular teams' goals of the built-in control flow was to enable completely automated migration. Give it a try in your app:
+
+ng update
+
+ng g @angular/core:control-flow
+
+And now make sure to try out the new @defer block feature 👏
+
+Conclusion
+Angular 17's introduction of Deferrable Views, particularly the new @defer block syntax, marks a significant leap in simplifying the dynamic loading of standalone components. @defer not only streamlines the process but also enhances Initial Load Performance by deferring heavy components, such as those with large third-party packages, until they are needed.
+
+Leveraging the built-in on and custom when triggers along with the prefetch feature and the @placeholder, @loading and @error states, further empowers developers to optimize the user experience with a more responsive and efficient web application.
